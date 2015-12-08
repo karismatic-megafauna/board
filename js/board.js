@@ -12,7 +12,7 @@ function Board(width, height) {
   for(x = 1; x <= width; x++) {
     this.spaces[x] = [];
     for(y = 1; y<= height; y++){
-      this.spaces[x][y] = "( "+ x +" , " + y + " )";
+      this.spaces[x][y] = new Space();
     }
   }
 }
@@ -20,4 +20,8 @@ function Board(width, height) {
 Board.prototype.setStart = function(x,y) {
   this.startX = x;
   this.startY = y; 
+}
+
+Board.prototype.setWall = function(x,y,direction){
+  this.spaces[x][y].setWall(direction)
 }
