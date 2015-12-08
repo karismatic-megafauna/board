@@ -3,6 +3,10 @@
     "north": true,
     "south": true,
     "east": true,
-    "west": true
+    "west": true,
+    "position": {
+      "x": 1,
+      "y": 1
+    }
   }
 ]
