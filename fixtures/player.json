@@ -1,5 +1,8 @@
 [
   {
-    "position": 1
+    "position": {
+      "x": 1,
+      "y": 1,
+    }
   }
 ]
